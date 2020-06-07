@@ -33,6 +33,3 @@ def run_test():
 
     predictions = run_prediction([question], context)
     return predictions
-
-if __name__ == '__main__':
-    app.run()
