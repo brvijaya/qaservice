@@ -3,4 +3,4 @@ requests
 tqdm
 gunicorn
 transformers
-torch
+torch==1.4.0+cpu
