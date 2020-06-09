@@ -1,7 +1,7 @@
 import os
 import logging
 import socket
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 import json
 from distilbert import run_prediction
@@ -29,6 +29,7 @@ def hello():
 @app.route("/qa/ask", methods=['POST'])
 def ask():
     data = request.get_json()
+    print(data)
     question = data['question']
     context = data['context']
 
